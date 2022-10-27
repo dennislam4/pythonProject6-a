@@ -7,12 +7,10 @@ def list_max(numbers):
     """Recursive function that finds the maximum value in given num_list."""
     first_element = numbers[0]
 
-    if len(numbers) == 0:
+    if len(numbers) == 1:
         return first_element
-
-    else:
+    elif len(numbers) > 1:
         maximum_value = list_max(numbers[1:])
-
         if first_element > maximum_value:
             maximum_value = first_element
         return maximum_value
