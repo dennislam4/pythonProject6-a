@@ -14,3 +14,5 @@ def list_max(numbers):
         if first_element > maximum_value:
             maximum_value = first_element
         return maximum_value
+    else:
+        return None
